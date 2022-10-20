@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MercadoLiebre</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <header>
+            <div class="top-header">
+                <div class="logo"> 
+                    <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+                </div>
+                <div class="form" action="#" method="GET">
+                    <div class="placeholder">Buscar productos, marcas y más<i class="fa fa-search" id="Lupa"></i></div>
+                </div>
+            </div>
+            <div class="slogan">
+                    <p class="description"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+            </div>
+            <div class="main-navbar">
+                <nav class="main-navbar">
+                    <ul class="navbar">
+                        <li><a href="#">Ofertas</a></li>
+                        <li><a href="#">Tiendas Oficiales</a></li>
+                        <li><a href="#">Vender</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                    </ul>
+                    <ul class="navbar">
+                        <li><a href="/register.html">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                        <li><a href="/login.html">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                        <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div herf="#" class="burger-menu">
+                <i class="fa fa-bars burger" id="burger-menu"></i>
+            </div>
+        </header>
+        <main class="mainregister">
+            <form action="home.html" method="get">
+                <div class="nombreCompleto">
+                    <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+                </div>
+                <div class="nombreUsuario">
+                    <input type="text" name="nombreUsuario" placeholder="Nombre de usuario" required>
+                </div>
+                <div class="email">
+                    <input type="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="headd">
+                    <h3>Fecha de nacimiento</h3>
+                </div>
+                <div class="fecha">
+                    <input type="date" name="date" id="fecha" placeholder="Fecha de Nacimiento">
+                </div>
+                <div>
+                    <input type="text" name="domicilio" placeholder="Domicilio">
+                </div>
+                <div class="radio">
+                    <h3>Perfil del usuario</h3>
+                    <p class="value">Comprador</p>
+                    <input type="radio" name="perfil" value="Comprador">
+                    <p class="value">Vendedor</p>
+                    <input type="radio" name="perfil" value="Comprador">
+                </div>
+                <div class="checkbox">
+                    <p class="value">Electro</p>
+                    <input type="checkbox" name="interés" value="Electro">
+                    <p class="value">Moda</p>
+                    <input type="checkbox" name="interés" value="Moda">
+                    <p class="value">Hogar</p>
+                    <input type="checkbox" name="interés" value="Hogar">
+                    <p class="value">Vida Sana</p>
+                    <input type="checkbox" name="interés" value="Vida Sana">
+                    <p class="value">Juguetería</p>
+                    <input type="checkbox" name="interés" value="Juguetería">
+                </div>
+                <div class="Enviar">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </main>
+        <footer>
+            <div>
+                <i class="fa-sharp fa-solid fa-credit-card"></i>
+                <h3 class="titulofooter">Pagá con tarjeta o efectivo</h3>
+                <p class="CudeTX">Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                puntos de pago. ¡Y siempre es seguro!</p>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-gift"></i>
+                <h3 class="titulofooter">Envío gratis desde $ 2.500</h3>
+                <p class="CudeTX">Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                    productos. Es un beneficio de Mercado Puntos.</p>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-user-shield"></i>
+                <h3 class="titulofooter">Seguridad, de principio a fin</h3>
+                <p class="CudeTX">¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                porque estás siempre protegid@.</p>
+            </div>
+            <h4 class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+        </footer>
+    </body>
+</html>

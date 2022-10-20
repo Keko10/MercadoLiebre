@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+body{
+    font-family:'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+.Titular{
+    font-size: 24px;
+}
+.price{
+    font-size: 18px;
+}
+.discount{
+    font-size: 16px;
+    font-weight: normal;
+}
+.description{
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: normal;
+}
+p{
+    margin: 0px 0px 0px 0px;
+}
+header{
+    display: flex;
+    flex: wrap;
+    flex-direction: column;
+    background-color: #EAC926;
+    padding: 30px 15px 10px 15px;
+
+}
+.top-header{
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+}
+.logo{
+    width: 20%;
+}
+.form{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.slogan{
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header .form .placeholder{
+    
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    background-color: #FFF;
+    outline: none;
+    color: #666;
+    padding: 2px;
+    height: 31px;
+    width: 280px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+#Lupa{
+    background-color: #FFF;
+    color: #666;
+    width: 10%;
+    text-align: end;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+header div.main-navbar{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px;
+    justify-content: space-around;
+}
+.main-navbar{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 90%;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+}
+#burger-menu{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+    box-sizing: border-box;
+}
+.burger-menu{
+    text-align: center;
+}
+section.banner img{
+    display: flex;
+    width: 100%;
+}
+.last-visit, .offers{
+    text-align: center;
+}
+main{
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ebebeb;
+}
+main section div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+main section h3{
+    margin: 20px 0px;
+}
+main section article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;    
+    margin-bottom: 10px;
+}
+main section article i{
+    display: block;
+    align-self: flex-end;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    right: 20px;
+    top: -15px;
+    z-index: 20;
+}
+article div.main-article{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-top: 1px solid #ebebeb;
+    padding: 15px;
+    align-items: flex-start;
+}
+main section article img{
+    width: 70%;
+}
+main section article i, .discount{
+    color: #39b54a;
+}
+footer{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    background-color: #FFF;
+}
+footer i{
+    size: 2em;
+    margin-bottom: 10px;
+}
+.copyright{
+    font-size: smaller;
+    font-weight: normal;
+}
+.titulofooter{
+    color: #666;
+}
+footer div p{
+    color: #666;
+    font-size: 12px;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+#truck:hover{
+    position: relative;
+    transform: rotate(270deg);
+    transition: 1s;
+}
+@media (max-width: 361px){
+    .top-header{
+        flex-direction: column;
+    }
+    .products{
+        flex-direction: column;
+    }
+    .description{
+        display: none;
+    }
+    }
+    main section div article{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        justify-content: space-around;
+        align-content: space-around;
+        align-self: center;
+    }
+
+
+@media (max-width: 769px) {
+    .top-header{
+        flex-direction: column;
+        align-items: center;
+    }
+    main section div article{
+        display: flex;
+        flex-direction: row;
+        width: 40%;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100); 
+    }
+}
+@media (min-width:769px){
+    main section div article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 20%
+    }
+    #burger-menu{
+        display: none;
+    }
+    header .form .placeholder{
+        height: 25px;
+    }
+}
+.mainregister{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    background-color: #ebebeb;
+}
+.mainlogin{
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    background-color: #ebebeb;
+}
+main form div{
+    padding: 15px;
+}
