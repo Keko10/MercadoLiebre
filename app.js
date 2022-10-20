@@ -6,10 +6,10 @@ app.use(express.static('./public'));
 const publicFolderPath = path.resolve('public');
 app.use(express.static(publicFolderPath));
 
-const APP_PORT = 1234;
+const APP_PORT = process.env.PORT||5001;
 
  app.listen(APP_PORT, ()=>{
-    console.log('Servidor funcionando en puerto '+ APP_PORT);
+    console.log('Servidor funcionando en puerto 5001');
 });
 
 app.get('/', (req,res) => {
