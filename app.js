@@ -1,9 +1,9 @@
 const express = require('express');
 const app = express();
 const path = require('path');
+const publicFolderPath = path.resolve('public');
 
 app.use(express.static('./public'));
-const publicFolderPath = path.resolve('public');
 app.use(express.static(publicFolderPath));
 
 const APP_PORT = process.env.PORT||5001;
